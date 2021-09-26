@@ -32,7 +32,6 @@ img {
 
 div#napkin {
   background-color: white;
-  font-size:  1.2em;
   padding: 0.5em;
   border: 1px black solid;
   margin: 1em auto;
@@ -52,4 +51,10 @@ hr {
 
 footer > p {
   font-size:  0.6em;
+}
+
+@media (max-width: 480px) {
+  div#napkin {
+    font-size:  0.8em;
+  }
 }
