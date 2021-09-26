@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Cheers!</title>
+    <link rel="shortcut icon" href="/assets/media/favicon.png" />
+    <link rel="canonical" href="https://codywinchester.com/cheers" />
+    <meta name="description" content="Fixing the United Airlines cocktail napkin acrostic.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Fixing the United Airlines cocktail napkin acrostic</h1>
+    
+    <img src="napkin.jpg" />
+    
+    <p>What, would you say, is going on with this United Airlines cocktail napkin?</p>
+
+    <p>Surely there are combinations of United destination cities that, when arranged in a monospaced table, neatly spell out "CHEERS" in a vertical column.<sup>*</sup></p>
+    
+    <p>As it turns out, there are <span id="combo-count">a bunch of</span> such combinations, which I calculated by grabbing <a href="https://en.wikipedia.org/wiki/List_of_United_Airlines_destinations">a list of United Airlines destinations</a> (excluding regional partner flights) and <a href="https://github.com/cjwinchester/cheers">working it out with some Python</a>.</p>
+
+    <p>Anyway, here are some alternative napkin designs:</p> 
+    
+    <button disabled="true">Loading ...</button>
+    
+    <div id="napkin"></div>
+
+    <hr>
+    <footer>
+      <p><sup>*</sup>Of course "San Francisco" doesn't include an exclamation point, so I guess we can chalk that up to artistic license. It does not appear that United flies to any of the tiny handful of <a href="https://www.usgs.gov/core-science-systems/ngp/board-on-geographic-names/download-gnis-data">domestic</a> or <a href="https://www.usgs.gov/core-science-systems/ngp/board-on-geographic-names/download-gnis-data">foreign</a> cities whose names include exclamation points.</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
