@@ -8,7 +8,7 @@ html, body {
   font-size:  16pt;
   font-family: 'DM Mono', 'Courier New', CourierNew, Consolas, monospace;
   line-height: 1.3;
-  margin: 40px auto;
+  margin: 2em auto;
   max-width: 768px;
   padding: 0 1em;
   overflow-x: hidden;
@@ -17,7 +17,7 @@ html, body {
 
 h1 {
   line-height: 1.1;
-  margin: 10px auto;
+  margin:  0;
 }
 
 sup {
@@ -27,7 +27,7 @@ sup {
 
 img {
   max-width: 100%;
-  margin:  0.5em auto;
+  margin: 1em auto 0 auto;
 }
 
 div#napkin {
@@ -54,6 +54,10 @@ footer > p {
 }
 
 @media (max-width: 480px) {
+  html, body {
+    margin: 1em auto;
+    padding: 0 0.5em;
+  }
   div#napkin {
     font-size:  0.8em;
   }

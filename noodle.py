@@ -59,6 +59,7 @@ data_final = {
     'possible_combinations': 0
 }
 
+
 # loop over that object we just made
 for idx in data:
 
