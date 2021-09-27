@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   background-color: #FEFCF9;
   color: #111;
   font-size:  16pt;
