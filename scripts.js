@@ -11,7 +11,6 @@ var phrase_count = phrase.split('').reduce(function(prev, item) {
 
 var napkin = document.getElementById('napkin');
 var button = document.getElementsByTagName('button')[0];
-var combo = document.getElementById('combo-count');
 
 // https://stackoverflow.com/a/2450976
 function shuffle(array) {
@@ -32,8 +31,6 @@ xhr.onload = function (e) {
     if (xhr.status === 200) {
       var resp = JSON.parse(xhr.responseText);
       var data = resp['data'];
-      var count = resp['possible_combinations'];
-      combo.innerHTML = 'at least ' + count;
       button.innerHTML = 'New napkin';
       button.disabled = false;
 
@@ -58,7 +55,7 @@ xhr.onload = function (e) {
             table_data['words'].push(x)
           });
         }
-        return table_data;        
+        return table_data;
       };
 
       function makeNewNapkin() {
