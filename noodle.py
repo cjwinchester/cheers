@@ -51,9 +51,7 @@ for city in cities:
                     'letter_data': [city]
                 }
 
-# the main dict that will be exported to file --
-# keeping track not just of the data to render on the page
-# but also a counter for how many unique combinations exist
+# the main dict that will be exported to file
 data_final = {
     'data': {},
     'possible_combinations': 0
